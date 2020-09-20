@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1208.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projetBigBen.Cave">
+   <children>
+      <ImageView fx:id="imgCave" fitHeight="720.0" fitWidth="1328.0" layoutX="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/cave.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="Manivelle3" layoutX="32.0" layoutY="190.0" mnemonicParsing="false" onAction="#valve" opacity="0.0" prefHeight="45.0" prefWidth="36.0" text="Manivelle3">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="Manivelle2" layoutX="37.0" layoutY="412.0" mnemonicParsing="false" onAction="#valve" opacity="0.0" prefHeight="65.0" prefWidth="69.0" text="Manivelle2">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="Manivelle5" layoutX="222.0" layoutY="269.0" mnemonicParsing="false" onAction="#valve" opacity="0.0" prefHeight="32.0" prefWidth="42.0" text="Manivelle5">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="Manivelle4" layoutX="399.0" layoutY="380.0" mnemonicParsing="false" onAction="#valve" opacity="0.0" prefHeight="32.0" prefWidth="30.0" text="Manivelle4">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="Manivelle1" layoutX="701.0" layoutY="139.0" mnemonicParsing="false" onAction="#valve" opacity="0.0" prefHeight="32.0" prefWidth="30.0" text="Manivelle1">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="ManivelleRouge" layoutX="1179.0" layoutY="376.0" mnemonicParsing="false" onAction="#valve" opacity="0.0" prefHeight="88.0" prefWidth="81.0" text="ManivelleRouge">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="Cuve" layoutX="485.0" layoutY="469.0" mnemonicParsing="false" onAction="#afficherImage" opacity="0.0" prefHeight="54.0" prefWidth="164.0" text="Cuve">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Arc fx:id="LumiereRouge" fill="#cf19199c" layoutX="719.0" layoutY="191.0" length="500.0" radiusX="8.0" radiusY="8.0" startAngle="45.0" stroke="#cf1b1b59" strokeType="INSIDE" strokeWidth="40.0" type="CHORD" visible="false" />
+      <Arc fx:id="LumiereVerte" fill="#14a4279c" layoutX="754.0" layoutY="192.0" length="500.0" radiusX="8.0" radiusY="8.0" startAngle="45.0" stroke="#14a42759" strokeType="INSIDE" strokeWidth="40.0" type="CHORD" visible="false" />
+      <Arc fx:id="LumiereBleu" fill="#1f7dff" layoutX="737.0" layoutY="205.0" length="270.0" radiusX="8.0" radiusY="8.0" startAngle="45.0" stroke="#2a75a4" strokeType="INSIDE" type="CHORD" visible="false" />
+      <Button fx:id="feuille" layoutX="519.0" layoutY="542.0" mnemonicParsing="false" onAction="#papier" opacity="0.0" prefHeight="77.0" prefWidth="135.0" text="Feuille" visible="false">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="retourAtelier" layoutX="3.0" layoutY="598.0" mnemonicParsing="false" onAction="#retourAtelier" opacity="0.0" prefHeight="77.0" prefWidth="141.0" text="Retour à l'atelier" textAlignment="CENTER">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Gill Sans Nova Italic" size="12.0" />
+         </font>
+      </Button>
+      <Arc fx:id="LumiereBleue" fill="#809edb9c" layoutX="736.0" layoutY="205.0" length="500.0" radiusX="8.0" radiusY="8.0" startAngle="45.0" stroke="#809ed946" strokeType="INSIDE" strokeWidth="40.0" type="CHORD" visible="false" />
+   </children>
+</AnchorPane>

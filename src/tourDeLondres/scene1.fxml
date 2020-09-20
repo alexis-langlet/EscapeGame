@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.Font?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0"
+            prefWidth="1280.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="tourDeLondres.Scene1">
+    <ImageView fitHeight="720.0" fitWidth="1280.0" layoutX="-8.0" pickOnBounds="true" preserveRatio="false">
+        <Image url="@../images/scene1.png"/>
+    </ImageView>
+    <Button fx:id="croix" focusTraversable="false" layoutX="572.0" layoutY="353.0" mnemonicParsing="false"
+            nodeOrientation="LEFT_TO_RIGHT" onAction="#actionnerCroix" opacity="0.0" prefHeight="97.0" prefWidth="58.0"
+            textAlignment="CENTER">
+        <cursor>
+            <Cursor fx:constant="OPEN_HAND"/>
+        </cursor>
+        <effect>
+            <Glow/>
+        </effect>
+    </Button>
+    <Arc fx:id="chapelet" fill="#945821" layoutX="822.0" layoutY="664.0" length="220.0" onMouseClicked="#survol"
+         opacity="0.95" radiusX="91.0" radiusY="43.0" startAngle="89.0" stroke="BLACK" strokeType="INSIDE" type="ROUND">
+        <cursor>
+            <Cursor fx:constant="HAND"/>
+        </cursor>
+        <effect>
+            <Shadow color="#715b5b"/>
+        </effect>
+    </Arc>
+    <Ellipse fx:id="pas1" fill="#632917" layoutX="724.0" layoutY="608.0" opacity="0.4" radiusX="22.0" radiusY="12.0"
+             rotate="27.6" stroke="#825d4b" strokeType="INSIDE" visible="false">
+        <cursor>
+            <Cursor fx:constant="HAND"/>
+        </cursor>
+    </Ellipse>
+    <Ellipse fx:id="pas2" fill="#632917" layoutX="756.0" layoutY="621.0" opacity="0.4" radiusX="9.0" radiusY="9.0"
+             stroke="#825d4b" strokeType="INSIDE" visible="false">
+        <cursor>
+            <Cursor fx:constant="HAND"/>
+        </cursor>
+    </Ellipse>
+    <Ellipse fx:id="pas3" fill="#632917" layoutX="657.0" layoutY="608.0" opacity="0.4" radiusX="22.0" radiusY="12.0"
+             rotate="31.8" stroke="#825d4b" strokeType="INSIDE" visible="false">
+        <cursor>
+            <Cursor fx:constant="HAND"/>
+        </cursor>
+    </Ellipse>
+    <Ellipse fx:id="pas4" fill="#632917" layoutX="691.0" layoutY="621.0" opacity="0.4" radiusX="9.0" radiusY="9.0"
+             stroke="#825d4b" strokeType="INSIDE" visible="false">
+        <cursor>
+            <Cursor fx:constant="HAND"/>
+        </cursor>
+    </Ellipse>
+    <Ellipse fx:id="pas5" fill="#632917" layoutX="691.0" layoutY="585.0" opacity="0.4" radiusX="9.0" radiusY="9.0"
+             stroke="#825d4b" strokeType="INSIDE" visible="false">
+        <cursor>
+            <Cursor fx:constant="HAND"/>
+        </cursor>
+    </Ellipse>
+    <Ellipse fx:id="pas6" fill="#632917" layoutX="665.0" layoutY="565.0" opacity="0.4" radiusX="22.0" radiusY="12.0"
+             rotate="25.0" stroke="#825d4b" strokeType="INSIDE" visible="false">
+        <cursor>
+            <Cursor fx:constant="HAND"/>
+        </cursor>
+    </Ellipse>
+    <Ellipse fx:id="pas7" fill="#825d4b" layoutX="607.0" layoutY="556.0" opacity="0.4" radiusX="22.0" radiusY="12.0"
+             rotate="42.1" stroke="#825d4b" strokeType="INSIDE" visible="false">
+        <cursor>
+            <Cursor fx:constant="HAND"/>
+        </cursor>
+    </Ellipse>
+    <Ellipse fx:id="pas8" fill="#632917" layoutX="632.0" layoutY="576.0" opacity="0.4" radiusX="9.0" radiusY="9.0"
+             stroke="#825d4b" strokeType="INSIDE" visible="false">
+        <cursor>
+            <Cursor fx:constant="HAND"/>
+        </cursor>
+    </Ellipse>
+    <Pane fx:id="depart" layoutX="170.0" layoutY="257.0" prefHeight="451.0" prefWidth="822.0">
+        <effect>
+            <Glow/>
+        </effect>
+        <children>
+            <ImageView cache="true" fitHeight="518.0" fitWidth="641.0" layoutX="113.0" pickOnBounds="true"
+                       preserveRatio="true">
+                <image>
+                    <Image url="@../images/long_sheet.png"/>
+                </image>
+            </ImageView>
+            <Label layoutX="214.0" layoutY="222.0" prefHeight="80.0" prefWidth="438.0" text="Bon courage !"
+                   wrapText="true">
+                <font>
+                    <Font name="Courier New Bold" size="14.0"/>
+                </font>
+            </Label>
+            <Label layoutX="164.0" layoutY="78.0" prefHeight="58.0" prefWidth="470.0"
+                   text="Au secours ! La couronne de la reine Victoria a été volée !" wrapText="true">
+                <font>
+                    <Font name="Courier New Bold" size="14.0"/>
+                </font>
+            </Label>
+            <Button fx:id="accepter" layoutX="306.0" layoutY="302.0" mnemonicParsing="false" onAction="#fermer"
+                    prefHeight="25.0" prefWidth="113.0" text="Accepter">
+                <font>
+                    <Font name="Rockwell" size="12.0"/>
+                </font>
+            </Button>
+            <Label layoutX="164.0" layoutY="114.0" prefHeight="148.0" prefWidth="494.0"
+                   text=" Vous êtes un infiltré de la tour et vous faites partie d'un groupe de républicains extrémistes.Votre objectif : trouver des informations concernant le vol de la couronne et chercher à la récupérer,cachée dans la Tour de Londres. Pour réussir cette épreuve, il vous faudra sortir de la tour indemme, la couronne en main. "
+                   wrapText="true">
+                <font>
+                    <Font name="Courier New Bold" size="14.0"/>
+                </font>
+            </Label>
+        </children>
+    </Pane>
+</AnchorPane>

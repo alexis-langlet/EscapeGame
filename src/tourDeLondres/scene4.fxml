@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0"
+            prefWidth="1280.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="tourDeLondres.Scene4">
+    <ImageView fitHeight="743.0" fitWidth="1251.0" layoutX="22.0" layoutY="-23.0" pickOnBounds="true"
+               preserveRatio="true">
+        <Image url="@../images/scene4.jpg"/>
+    </ImageView>
+    <Button fx:id="cle" layoutX="230.0" layoutY="436.0" mnemonicParsing="false" onAction="#PrendreCle" opacity="0.0"
+            prefHeight="55.0" prefWidth="49.0" text="Clé">
+        <cursor>
+            <Cursor fx:constant="HAND"/>
+        </cursor>
+    </Button>
+
+</AnchorPane>

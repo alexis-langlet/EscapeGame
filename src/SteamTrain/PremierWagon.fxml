@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SteamTrain.PremierWagonController">
+   <children>
+      <ImageView fx:id="imgPremierWagon" fitHeight="720.0" fitWidth="1280.0">
+         <image>
+            <Image url="@../img/PremierWagon.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="note1" fitHeight="32.0" fitWidth="33.0" layoutX="884.0" layoutY="438.0" onMouseClicked="#clickBoutonNote1" opacity="0.55">
+         <image>
+            <Image url="@../img/note1.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="FlecheScenePorte" fitHeight="53.0" fitWidth="67.0" layoutX="633.0" layoutY="428.0" onMouseClicked="#clickFlecheScenePorte" rotate="-134.1">
+         <image>
+            <Image url="@../img/fleche_droite.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SteamTrain.EtiquetteVClickedController">
+   <children>
+      <ImageView fitHeight="722.0" fitWidth="1284.0" opacity="0.9">
+         <image>
+            <Image url="@../img/vue2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="209.0" fitWidth="232.0" layoutX="927.0" layoutY="458.0" opacity="0.7">
+         <image>
+            <Image url="@../img/luggage2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="541.0" fitWidth="596.0" layoutX="331.0" layoutY="130.0" nodeOrientation="RIGHT_TO_LEFT" opacity="0.8">
+         <image>
+            <Image url="@../img/luggage3.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="592.0" fitWidth="644.0" layoutX="212.0" layoutY="65.0">
+         <image>
+            <Image url="@../img/etiquetteV.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="idFlecheRetourV" fitHeight="85.0" fitWidth="82.0" layoutX="2.0" layoutY="637.0" onMouseClicked="#actionFlecheRetourV" rotate="-90.0">
+         <image>
+            <Image url="@../img/back_arrow.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>

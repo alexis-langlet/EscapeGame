@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projetBigBen.Cadenas">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" layoutX="175.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Cadena.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="premier" alignment="CENTER" layoutX="230.0" layoutY="293.0" prefHeight="17.0" prefWidth="21.0" text="1">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="deuxieme" alignment="CENTER" layoutX="264.0" layoutY="293.0" prefHeight="17.0" prefWidth="21.0" text="1">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="troisieme" alignment="CENTER" layoutX="299.0" layoutY="293.0" prefHeight="17.0" prefWidth="21.0" text="1">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="quatrieme" alignment="CENTER" layoutX="334.0" layoutY="293.0" prefHeight="17.0" prefWidth="21.0" text="1">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Button fx:id="incrPremier" layoutX="230.0" layoutY="232.0" mnemonicParsing="false" onAction="#chiffre" prefHeight="25.0" prefWidth="21.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="incrDeuxieme" layoutX="264.0" layoutY="232.0" mnemonicParsing="false" onAction="#chiffre" prefHeight="25.0" prefWidth="21.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="incrTroisieme" layoutX="299.0" layoutY="232.0" mnemonicParsing="false" onAction="#chiffre" prefHeight="25.0" prefWidth="21.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="incrQuatrieme" layoutX="332.0" layoutY="232.0" mnemonicParsing="false" onAction="#chiffre" prefHeight="25.0" prefWidth="21.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="decrPremier" layoutX="230.0" layoutY="353.0" mnemonicParsing="false" onAction="#chiffre" prefHeight="25.0" prefWidth="21.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="decrDeuxieme" layoutX="264.0" layoutY="353.0" mnemonicParsing="false" onAction="#chiffre" prefHeight="25.0" prefWidth="21.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="decrTroisieme" layoutX="299.0" layoutY="353.0" mnemonicParsing="false" onAction="#chiffre" prefHeight="25.0" prefWidth="21.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="decrQuatrieme" layoutX="332.0" layoutY="353.0" mnemonicParsing="false" onAction="#chiffre" prefHeight="25.0" prefWidth="21.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+   </children>
+</AnchorPane>

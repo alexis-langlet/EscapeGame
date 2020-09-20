@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projetBigBen.Intro">
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/texte_intro.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="non" layoutX="200.0" layoutY="433.0" mnemonicParsing="false" onAction="#non" prefHeight="95.0" prefWidth="228.0" text="Non." textAlignment="CENTER">
+         <font>
+            <Font name="Gabriola" size="50.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="accord2" layoutX="200.0" layoutY="433.0" mnemonicParsing="false" onAction="#atelier" prefHeight="35.0" prefWidth="228.0" text="D'accord !" textAlignment="CENTER" visible="false">
+         <font>
+            <Font name="Gabriola" size="50.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="accord" layoutX="852.0" layoutY="433.0" mnemonicParsing="false" onAction="#atelier" prefHeight="79.0" prefWidth="228.0" text="D'accord !" textAlignment="CENTER">
+         <font>
+            <Font name="Gabriola" size="50.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>
